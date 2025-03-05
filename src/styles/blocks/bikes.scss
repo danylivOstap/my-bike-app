@@ -1,0 +1,50 @@
+.bikes {
+  @include pageGrid;
+
+  &__title {
+    grid-column: 1 / -1;
+
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+    text-align: center;
+  }
+
+  &__card {
+    grid-column: span 2;
+    row-gap: 48px;
+
+    @include onTablet {
+      grid-column: 2 / -2;
+    }
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+
+    &-image {
+      width: 100%;
+
+      @include hover(transform, scale(1.1))
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33.6px;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22.4px;
+    }
+
+    &-price {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33.6px;
+    }
+  }
+}
