@@ -22,4 +22,16 @@
       margin-top: 144px;
     }
   }
+
+  &__contacts {
+    margin-top: 80px;
+
+    @include onTablet {
+      margin-top: 120px;
+    }
+
+    @include onDesktop {
+      margin-top: 180px;
+    }
+  }
 }

@@ -268,14 +268,68 @@
             </div>
           </section>
 
-          <section class="contacts" id="contacts">
-            <h2>Contacts</h2>
+          <section class="section__contacts contacts" id="contacts">
+            <h2 class="contacts__title">
+              Contact us
+            </h2>
+
+            <div class="contacts__form">
+              <input type="text"
+                id="name"
+                name="name"
+                placeholder="    Name"
+                class="contacts__form-input"
+                required>
+
+                <input type="email"
+                  id="email"
+                  name="email"
+                  placeholder="    Email"
+                  class="contacts__form-email"
+                  required>
+
+                <textarea type="message"
+                  id="message"
+                  name="message"
+                  placeholder="    Message"
+                  class="contacts__form-textarea"
+                  rows="5"
+                  required>
+                </textarea>
+
+                <button class="contacts__form-button" type="submit">Send</button>
+            </div>
+
+            <div class="contacts__info">
+              <div class="contacts__info-item">
+                <h3 class="contacts__info-title">Phone</h3>
+                <p class="contacts__info-text">+1 234 5555-55-55</p>
+              </div>
+
+              <div class="contacts__info-item">
+                <h3 class="contacts__info-title">Email</h3>
+                <p class="contacts__info-text">ost-dan@chi.com</p>
+              </div>
+
+              <div class="contacts__info-item">
+                <h3 class="contacts__info-title">Phone</h3>
+                <p class="contacts__info-text">
+                  400 first ave.<br>
+                  suite 700<br>
+                  Minneapolis, MN 55401
+                </p>
+              </div>
+            </div>
           </section>
 
         </div>
       </div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__content">
+        
+      </div>
+    </footer>
   </body>
 </html>
